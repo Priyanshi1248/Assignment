@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: calibri;
+    }
+
+    nav {
+      background-color: #3615f5;
+      color: #fff;
+      padding: 10px;
+      
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    nav .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    nav input[type="checkbox"] {
+      display:none;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav .menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+    
+      transition: background 0.5s;
+    }
+
+    nav .menu a:hover {
+      background-color: #addaf7;
+      border : 4px;
+    }
+
+    nav .menu-icon {
+      display: none;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 550px) {
+      nav .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 10px;
+      }
+
+      nav input[type="checkbox"]:checked ~ .menu {
+        display: flex;
+      }
+
+      nav .menu-icon {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo"> Plix</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Product</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+</body>
+</html>
