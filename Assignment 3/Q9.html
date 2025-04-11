@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar with Dropdown</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   ul{
+      list-style: none;
+      background-color: black;
+      color: white;
+   }
+   ul li{
+      display:inline-block;
+      padding: 10px;
+
+   }
+   ul li:hover{
+    background-color: lightpink;
+    color: black;
+   }
+   .dropdown{display: none;}
+   ul li:hover  .dropdown{
+          display: block;
+          position: absolute;
+          margin-left: -0.29cm;
+          margin-top: 0.27cm;
+   }
+   .dropdown ul{
+      padding: 0;
+     margin: 0;
+   }
+   .dropdown ul li{
+        display: block;
+       
+
+   }
+
+
+    
+  </style>
+</head>
+<body>
+    <ul>
+      <li>Home</li>
+      <li>About Us </li>
+      <li>Courses
+      <div class="dropdown">
+          <ul>
+            <li>B.Tech</li>
+            <li>MBA</li>
+            <li>M.SC(CA&IT)</li>
+            <li>BCA</li>
+          </ul>
+      </div>
+      </li>
+      <li>Contact Us</li>
+
+      
+    </ul>
+</body>
+</html>

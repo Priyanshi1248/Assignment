@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Grid </title>
+    <style>
+        body{
+            justify-items: center;
+        
+        
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 4px;
+            margin-top: 7%;
+        }
+        .grid-item{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size:medium ;
+            font-weight: bold;
+            color: white;
+            
+        }
+        .item-1{
+            
+            background-color: skyblue;
+            padding-top: 40px;
+        
+        }
+        .item-2{
+            
+            background-color: red;
+            padding-top: 40px;
+        }
+        .item-3{
+           
+            background-color:blue;
+            padding-top: 40px;
+        }
+        .item-4{
+          
+            background-color: yellow;
+            padding-top: 40px;
+        }
+        .item-5{
+           
+            background-color: purple;
+            padding-top: 40px;
+        }
+        .item-6{
+           
+            background-color: green;
+            padding-top: 40px;
+        }
+        .item-7{
+           
+            background-color: orangered;
+            padding-top: 40px;
+        }
+        .item-8{
+           
+            background-color:rgb(73, 182, 182) ;
+            padding-top: 40px;
+        }
+        .item-9{
+            
+            background-color: brown;
+            padding-top: 40px;
+        }
+        @media(max-width:658px){
+            .item-1{
+                background-color: blueviolet;
+            }
+            .item-2{
+                background-color: rgb(211, 137, 18);
+            }
+            .item-3{
+                background-color: rgb(62, 8, 113);
+            }
+            .item-4{
+                background-color: rgb(10, 108, 35);
+            }
+            .item-5{
+                background-color: rgb(223, 11, 180);
+            }
+            .item-6{
+                background-color: rgb(191, 88, 75);
+            }
+            .item-7{
+                background-color: rgb(213, 176, 247);
+            }
+            .item-8{
+                background-color: rgb(196, 22, 62);
+            }
+            .item-9{
+                background-color: rgb(78, 228, 234);
+            }
+        }
+            
+                
+
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item-1">1.</div>
+        <div class="grid-item item-2">2.</div>
+        <div class="grid-item item-3">3.</div>
+        <div class="grid-item item-4">4.</div>
+        <div class="grid-item item-5">5.</div>
+        <div class="grid-item item-6">6.</div>
+        <div class="grid-item item-7">7.</div>
+        <div class="grid-item item-8">8.</div>
+        <div class="grid-item item-9">9.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        form{
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 6px;
+            color: #090808;
+
+        }
+        label{
+            display: block;
+            margin-top: 1px;
+            color: #132bc4;
+
+        }
+       #button{
+        background-color: lightblue;
+        color: #090808;
+        cursor: pointer;
+       }
+       #button:hover{
+        background-color: darkblue;
+        color: white;
+       }
+       input{
+        width: auto;
+        border-radius: 2px;
+        border-radius: 1px solid #ccc;
+        outline: none;
+
+       }
+
+
+    </style>
+    
+</head>
+<body>
+    <form action="#">
+        <h2>Software Request</h2>
+        <label for="name">Name</label>
+        <br><input type="text" placeholder="Enter your name"><br>
+        <br><label for="Emplyoee ID">Emplyoee ID</label>
+        <br><input type="text" placeholder="Enter your Emplyoee ID"><br>
+        <br><label for="email">Email</label>
+        <br><input type="text" placeholder="Enter your Email"><br>
+        <br><label for="name">Mobile No</label>
+        <br><input type="number" placeholder="Enter your name"><br>
+        <br><label for="Which Software do you require">Which Software do you require?</label><br>
+        <input type="checkbox" id="Software A" name="Which Software do you require" >Software A 
+        <br><input type="checkbox" id="Software B" name="Which Software do you require" >Software B
+        <br><input type="checkbox" id="Software C" name="Which Software do you require" >Software C <br>
+
+        <br><input type="Request" value="Request" id="button">
+    </form>
+
+</body>
+</html>
